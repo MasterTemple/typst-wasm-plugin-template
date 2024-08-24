@@ -1,0 +1,18 @@
+[package]
+name = "typst_wasm_plugin_template"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[workspace]
+resolver = "2"
+members = [
+	# "typst_plugin",
+	"wasm_macro",
+]
+
+[dependencies]
+
+wasm_macro = { path = "./wasm_macro"}
